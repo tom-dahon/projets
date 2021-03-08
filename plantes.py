@@ -18,24 +18,21 @@ def arbre_branche(t, regle, niveau, taille, angle, pile):
                 angle = randint(10, 45)
                 t.left(angle)
                 n = random()
-                
-                if n < 1:
-                    t.circle(1)
+                if n < 0.8:
                     x = random()
-                    
-                    if x < 1:
-                        #regle += "F"
+                    if x < 0.7:
                         arbre_branche(t, regle, niveau-1, taille*0.6, angle, pile)
+                    else:
+                        t.circle(1)
                         
             elif r == "-":
                 
                 angle = randint(10, 45)
                 t.right(angle)
                 n = random()
-                if n < 1:
+                if n < 0.8:
                     x = random()
-                    if x < 1:
-                        #regle += "F"
+                    if x < 0.7:
                         arbre_branche(t, regle, niveau-1, taille*0.6, angle, pile)
                     else:
                         t.circle(1)
@@ -48,10 +45,8 @@ def arbre_branche(t, regle, niveau, taille, angle, pile):
                 t.setposition(s[0])
                 t.setheading(s[1])
             elif r == "X":
-                # t.dot()
                 x = random()
-                if x < 0.8:
-                    #regle += "F"
+                if x < 0.6:
                     arbre_branche(t, regle, niveau-1, taille/3, angle, pile)
             
                 
