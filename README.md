@@ -1,6 +1,6 @@
 # Projets :
 
-## [Morpion](../../../morpion/blob/main/README.md)
+## [Morpion](../../../morpion)
 
 ## [L Système Plantes](../../../plantes/blob/main/README.md)
 
